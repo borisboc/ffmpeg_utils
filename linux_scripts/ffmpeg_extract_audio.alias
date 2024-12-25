@@ -1,0 +1,4 @@
+ffmpeg_extract_audio() {
+	ffmpeg -i "$1" -vn -acodec copy "$2"
+	return 0
+}
