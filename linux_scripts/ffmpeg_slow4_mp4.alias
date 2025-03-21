@@ -1,0 +1,1 @@
+alias ffmpeg_slow4_mp4 ='for i in *.mp4; do ffmpeg -i "$i" -filter:v "setpts=4.0*PTS" -an "${i%.*}_slow4.mp4"; done'
