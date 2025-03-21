@@ -1,0 +1,1 @@
+alias ffmpeg_reverse_mp4='for i in *.mp4; do ffmpeg -i "$i" --vf reverse -an "${i%.*}_reversed.mp4"; done'
