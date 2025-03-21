@@ -86,3 +86,6 @@ if __name__ == "__main__":
                     str(output_filename.absolute()),
                 ]
             )
+
+    if concat_filepath.exists():
+        os.remove(concat_filepath)
